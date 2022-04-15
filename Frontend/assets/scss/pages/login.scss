@@ -16,9 +16,10 @@
         background-color: $blur-color;
     }
 }
+
 .img-logo{
-    position: absolute;
-    margin: 1rem;
+    position: relative;
+    padding: 1rem;
 
     img{
         max-width: 15rem;
@@ -36,8 +37,9 @@
     .box-login{
         min-height: 60vh;
         height: auto;
-        width: 30vw;
-        margin-top: 5%;
+        min-width: 30vw;
+        width: auto;
+        margin-top: 3%;
 
         background-color: $background-color-glassy;
         color: $text-color;
