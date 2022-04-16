@@ -4,7 +4,7 @@
           <div class="img-logo"><img src="./../assets/media/animeflix-logo.png" alt=""></div>
             <div class="spotlight">
                 <div class="left">
-                    <img class="title" src="./../assets/media/animeflix-logo.png">
+                    <img class="title" src="./../assets/media/title-Kono_Subarashii_Sekai.png">
                     <div class="details">
                         <label>Lançamento 2016</label>
                         <label>2 Temporadas</label>
