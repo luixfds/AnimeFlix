@@ -11,7 +11,7 @@ class AnimeFormat(admin.ModelAdmin):
 
 @admin.register(SeasonGroup)
 class SeasonGroupFormat(admin.ModelAdmin):
-    list_display = ('number', )
+    list_display = ('anime', 'season', )
 
 @admin.register(EpsGroup)
 class EpsGroupFormat(admin.ModelAdmin):
