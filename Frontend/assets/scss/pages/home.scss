@@ -1,0 +1,114 @@
+@import "./../variables.scss";
+
+.content{
+    min-height: 100vh;
+    height: auto;
+    min-width: 100vw;
+    width: auto;
+
+    background-color: $background-color;
+
+    .img-logo{
+        position: absolute;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        
+        padding: 1rem;
+    
+        img{
+            max-width: 15rem;
+            width: auto;
+        }
+    }
+
+    .spotlight{
+        display: flex;
+        flex-direction: row;
+
+        height: 60vh;
+        width: 100vw;
+
+        .left{
+            position: fixed;
+            z-index: 1000;
+            width: 45vw;
+
+            display: flex;
+            flex-direction: column;
+
+            color: $text-color-dark;
+
+            padding-left: 4rem;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+
+            .title{
+                max-width: 25vw;
+                width: auto;
+                max-height: 15vh;
+                min-height: 8vh;
+                height: auto;
+            }
+
+            .details{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+
+                font-size: 20px;
+            }
+        }
+
+        .right{
+            margin-right: 0;
+            margin-left: auto;
+
+            background-image: url("./../assets/media/background-animeflix.jpg");
+            
+            min-width: 65vw;
+            height: 100%;
+            max-height: 60vh;
+            
+            box-shadow: inset 50px 1px 60px 70px $background-color;
+
+            .blur{
+                height: 100%;
+                width: 100%;
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 850px){
+    .content{
+        .img-logo{
+            display: none;
+        }
+
+        .spotlight{
+            .left{
+                width: 90%;
+                height: 60vh;
+
+                padding-left: 2rem;
+
+                .title{
+                    max-width: 50vw;
+                }
+            }
+
+            .right{
+                position: fixed;
+                min-width: 100vw;
+                max-width: 100vw;
+
+                .blur{
+                    background-color: $background-color-glassy;
+                }
+            }
+        }
+    }
+}
